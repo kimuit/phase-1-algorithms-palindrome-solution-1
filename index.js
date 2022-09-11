@@ -1,11 +1,20 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const newOriginal = firstOriginal(word);
+// returns true only if the notOriginal is exatly the same as word
+  if(word === newOriginal){
+
+    return true;
+  }
+  else{
+  return false;
+  }
 }
 
-/* 
-  Add your pseudocode here
-*/
-
+// word to be converted in reverse e.g(cow >> woc)
+function firstOriginal (word) {
+return word.split('').reverse().join('');
+}
 /*
   Add written explanation of your solution here
 */
